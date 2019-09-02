@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/BankApp-1.0.jar -Dserver.port=$PORT $JAR_OPTS
+web: java -Dserver.port=$PORT -jar target/BankApp-1.0.jar
