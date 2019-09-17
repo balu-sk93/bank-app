@@ -19,7 +19,7 @@ Response:
 **Fetch a bank details, given branch IFSC code** 
 Request:
 ```sh
-curl -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2Nzg1NDMzMSwiaWF0IjoxNTY3NDIyMzMxfQ.qPB-wB5VcqD6DJ-Ps8sfG_Bj5mIzYRmm3VDVoEemerDH3m1Yg8kUExqzPikhF51-3xrDRZKcJ6vc641zNgI_uA' -d '{"ifscCode" : "ABHY0065001"}'  'https://blooming-meadow-52246.herokuapp.com/api/bank/ifsc?page=0&size=1'
+curl -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2Nzg1NDMzMSwiaWF0IjoxNTY3NDIyMzMxfQ.qPB-wB5VcqD6DJ-Ps8sfG_Bj5mIzYRmm3VDVoEemerDH3m1Yg8kUExqzPikhF51-3xrDRZKcJ6vc641zNgI_uA' 'https://blooming-meadow-52246.herokuapp.com/api/bank?ifsc=ABHY0065001&page=0&size=1'
 ```
 Response
 ```sh
@@ -28,7 +28,7 @@ Response
 **Fetch all details of branches, given bank name and a city** 
 Request:
 ```sh
-curl -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2Nzg1NDMzMSwiaWF0IjoxNTY3NDIyMzMxfQ.qPB-wB5VcqD6DJ-Ps8sfG_Bj5mIzYRmm3VDVoEemerDH3m1Yg8kUExqzPikhF51-3xrDRZKcJ6vc641zNgI_uA' -d '{"city" : "BANGALORE","bankName":"ICICI BANK LIMITED"}'  'https://blooming-meadow-52246.herokuapp.com/api/banks?page=0&size=2'
+curl -H 'Content-Type:application/json' -H 'Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU2Nzg1NDMzMSwiaWF0IjoxNTY3NDIyMzMxfQ.qPB-wB5VcqD6DJ-Ps8sfG_Bj5mIzYRmm3VDVoEemerDH3m1Yg8kUExqzPikhF51-3xrDRZKcJ6vc641zNgI_uA' 'http://blooming-meadow-52246.herokuapp.com/api/banks?bankName=ICICI BANK LIMITED&city=BANGALORE&page=0&size=2'
 ```
 Response
 ```sh
